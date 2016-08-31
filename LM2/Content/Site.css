@@ -1,0 +1,70 @@
+﻿body {
+    background-color: #a2a887;
+    font-size: 10pt;  font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0; padding: 0;
+}
+
+a { color: #590a0c; }
+a:hover { color: #d1181d; text-decoration: none; }
+a:active { color: #ff0000; text-decoration: none; }
+
+header, footer, nav, section { display: block; }
+
+h1 { font-size: 16pt; font-family: Diplomata, cursive; font-weight: 400; margin: 20pt 0 4pt 0; color: #003162 } 
+h2 { font-family: 'Source Sans Pro', sans-serif; font-style: italic; font-weight: 900; font-size: 16pt; margin: 20pt 0 4pt 0; color: #000000 } 
+p { margin: 0 0 20pt 0 }
+
+.page {
+    width: 950px; text-align: left; margin: auto;
+    background-image: url(ManuscriptBg2.jpg), url(ManuscriptBg2_back.jpg);
+    background-repeat: no-repeat, repeat-y
+}
+
+
+header, #header { margin: 0; padding: 0; }
+#photoStripContainer { width: 650px; float: left; margin-left: 32px; }
+#photoStripContainer img { width: 650px; position: relative; top: 6px }
+#title { padding: 20px 0 20px 50px; float: left; }
+
+header #title a img { border: none }
+header nav { margin: 40px 40px 0 0; width: 200px; }
+header nav ul { list-style: none; margin: 10px 0 10px 0; padding: 0 0 0 0 }
+header nav ul li { padding-bottom: 10px }
+header nav a { text-decoration: none; font-size: 14pt; font-family: Coda; font-weight: 800; }
+
+#main { padding: 10px 40px 30px 50px; }
+
+footer, #footer { font-size: 8pt; color: Gray; margin: 0px 40px 10px 40px; padding-bottom: 10px }
+
+
+.left { float: left }
+.right { float: right }
+.clear { clear: both; }
+
+.error { color: Red; }
+
+.subContentBlock { margin-left: 40px }
+
+.eventsBlock { margin: 30px 0 0 0 }
+.eventName { font-family: 'Source Sans Pro', sans-serif; font-style: italic; font-weight: 900; font-size: 16pt }
+.eventDate { color: #007000; font-size: 10pt; font-family: 'Chivo'; font-weight: 900; margin-bottom: 4px }
+.eventDesc { margin: 0 0 4pt 0 }
+.eventAddress { color: #003162; font-family: Amarante, cursive; font-size: 11pt }
+.eventComment1 { color: #003162; margin: 0 0 10px 0; font-family: 'Alegreya', serif; font-weight: 700; font-style: italic; font-size: 10pt }
+
+.blockLink {
+    text-decoration: none;
+    color: #590a0c;
+    display: block;
+    padding: 4px 4px 4px 4px
+}
+.blockLink:hover 
+{
+    color: #d1181d;
+    border: 1px solid #590a0c;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px
+}
+.blockLink:active { color: #590a0c; }
+
+.linksArticle { padding: 10px 0 10px 0 }

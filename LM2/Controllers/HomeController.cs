@@ -1,0 +1,375 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+using LaudaMusicam.Models;
+
+namespace LaudaMusicam.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            var address_StBarts = new Address { Name = "St. Bartholomew's Episcopal Church", StreetAddressLine1 = "1790 Lavista Road", City = "Atlanta", StateProvince = "GA", ZipCode = "30329" };
+            var address_EpiscopalChurchOfTheGoodShepherd = new Address { Name = "Episcopal Church of the Good Shepherd", StreetAddressLine1 = "4140 Clark Street SW", City = "Covington", StateProvince = "GA", ZipCode = "30014" };
+            var address_ChurchOfTheNewCovenant = new Address { Name = "Church of the New Covenant", StreetAddressLine1 = "3330 Chestnut Drive", City = "Doraville", StateProvince = "GA", ZipCode = "30340" };
+            var address_WoodruffArtsCenter = new Address { Name = "Woodruff Arts Center", StreetAddressLine1 = "1280 Peachtree Street NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30309" };
+
+            var events = new List<EventModel>();
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 1,
+            //    Name = "Music in the Italian Renaissance",
+            //    Description = "Lauda Musicam gives the audience a sample of music in Italy from the 13th through 17th centuries in its concert at St. Bartholomew's Episcopal Church, 1790 LaVista Road, Atlanta, GA 30329.  Admission is free, but donations are suggested.  Uncommon Practice, a 16-member vocal ensemble directed by Robert Bolyard, will assist.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2010-11-19 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 2,
+            //    Name = "Atlanta Recorder Society's Consort Day",
+            //    Description = "Participation in the Atlanta Recorder Society's Consort Day performance at Unitarian Universalist Congreation of Atlanta, 1911 Cliff Valley Way, Atlanta, GA 30329.  Visit http://home.mindspring.com/~gillmorm/ for more information.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2011-03-27 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 2,
+            //    Name = "Jewish Influence in Early Music.",
+            //    Description = "Sephardic and Jewish music will demonstrate many of the artistic contributions of the European Jewish culture in the concert at St. Bartholomew's Episcopal Church, 1790 LaVista Road, Atlanta, GA 30329.  Admission is free, but donations are suggested.  Uncommon Practice, a 16-member vocal ensemble directed by Robert Bolyard, will assist.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2011-05-20 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //});
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 1,
+            //                Name = "War and Eternal Peace.",
+            //                Description = @"Lauda Musicam of Atlanta, 
+            //conducted by Jody Miller, performs Medieval and 
+            //Renaissance music on instruments appropriate for the time period.  
+            //Battaglias, or war tunes, are the focal point of this Veteran's Day 
+            //concert, but music of peace and eternal peace will be included as a 
+            //remembrance to all involved in conflict throughout the ages.  Lauda 
+            //Musicam of Atlanta is a 50-member instrumental ensemble of recorders, 
+            //viols, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and 
+            //percussion.  Uncommon Practice, an a cappella vocal ensemble 
+            //specializing in music before Bach's ""common practice"" period, will 
+            //assist.  St. Bartholomew's Episcopal Church, 1790 Lavista Road, 
+            //Atlanta, GA 30329.  404-634-3336 or www.laudamusicam.org. The concert 
+            //is free, but donations are accepted and appreciated.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2011-11-11 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 2,
+            //                Name = "A Valentine's Day Celebration:  Love Music of the Renaissance.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, performs Medieval and Renaissance music on instruments appropriate for the time period.
+            //In keeping with the Valentine's Day theme, the musicians will perform music depicting the popular theme of love.
+            //Lauda Musicam of Atlanta is a 50-member instrumental ensemble of recorders, viols, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.
+            //Uncommon Practice, an a cappella vocal ensemble specializing in music before Bach's ""common practice"" period, will assist.
+            //Holy Trinity Parish, 515 East Ponce de Leon Avenue, Decatur, GA 30030. 404-377-2622 or www.laudamusicam.org.
+            //The concert is free, but donations are accepted and appreciated.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2012-02-11 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 3,
+            //                Name = "Family and Children's Concert",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, will perform 
+            //standard fare from the Medieval, Renaissance, and Baroque periods on 
+            //instruments appropriate for the time period. Music by some of the most 
+            //well-known composers will make this concert fun for the newbie and the 
+            //enthusiast alike! Built into the performance will be demonstrations of 
+            //the instruments and music forms for people less familiar with 
+            //historical music. Members will lead a ""petting zoo"" after the concert 
+            //for people to see and try instruments and to ask members questions. 
+            //Lauda Musicam of Atlanta is a 50-member instrumental ensemble of 
+            //recorders, viols, harpsichord, sackbuts, shawms, harps, crumhorns, 
+            //cornettos, and percussion. Uncommon Practice, an a cappella vocal 
+            //ensemble specializing in music before Bach's ""common practice"" period, 
+            //will assist. The Episcopal Church of the Good Shepherd, 4140 Clark 
+            //Street SW, Covington, GA 30014. 770-786-3278 or www.laudamusicam.org. 
+            //The concert is free, but donations are accepted and appreciated.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2012-05-06 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 4,
+            //                Name = "Family and Children's Concert.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, will perform 
+            //standard fare from the Medieval, Renaissance, and Baroque periods on 
+            //instruments appropriate for the time period.  Music by some of the most 
+            //well-known composers will make this concert fun for the newbie and the 
+            //enthusiast alike!  Built into the performance will be demonstrations of 
+            //the instruments and music forms for people less familiar with 
+            //historical music.  Members will lead a ""petting zoo"" after the concert 
+            //for people to see and try instruments and to ask members questions.  
+            //Lauda Musicam of Atlanta is a 50-member instrumental ensemble of 
+            //recorders, viols, harpsichord, sackbuts, shawms, harps, crumhorns, 
+            //cornettos, and percussion.  Uncommon Practice, an a cappella vocal 
+            //ensemble specializing in music before Bach's ""common practice"" period, 
+            //will assist.  St. Bartholomew's Episcopal Church, 1790 Lavista Road, 
+            //Atlanta, GA 30329.  404-634-3336 or www.laudamusicam.org.  The concert 
+            //is free, but donations are accepted and appreciated.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2012-05-18 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time"))
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 5,
+            //                Name = "Cancioneiro de Palacio:  Music of Renaissance Spain.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, presents ""Cancioneiro de Palacio:  Music of Renaissance Spain.""
+            //Music from the large songbook Cancioneiro de Palacio, compiled over 40 years during the reign of the Catholic Monarchs, serves as the backbone of this concert of Spanish music.
+            //Lauda Musicam performs on wind, string, and percussion instruments in popular use during the time period.  The vocal ensemble Uncommon Practice assists in this performance.
+            //Lauda Musicam is an ensemble of historical instruments, including recorder, viol, cornetto, harp, sackbut, shawm, percussion, and voice.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2012-11-09 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "Free, but donations are accepted."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 6,
+            //                Name = "Love Music of the Renaissance:  A Valentine's Day Concert.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, presents ""Love Music of the Renaissance:  A Valentine's Day Concert.""
+            //Often the subject of music throughout history, love with all of its joy and pain is celebrated in a concert of music for the occasion.
+            //Lauda Musicam performs on wind, string, and percussion instruments in popular use during the time period.
+            //Lauda Musicam is an ensemble of historical instruments, including recorder, viol, cornetto, harp, sackbut, shawm, percussion, and voice.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2013-02-10 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_EpiscopalChurchOfTheGoodShepherd,
+            //                Comment1 = "Free, but donations are accepted."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 7,
+            //                Name = "Fun and Games:  A Family and Children's Concert.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, presents ""Fun and Games: A Family and Children's Concert.""
+            //Playful, mischievous, and fun music as various instruments used during the renaissance period are demonstrated.
+            //The concert will be followed by an instrument ""petting zoo"" where the audience can see and play the instruments themselves!
+            //Lauda Musicam performs on wind, string, and percussion instruments in popular use during the time period.  The vocal ensemble Uncommon Practice assists in this performance.
+            //Lauda Musicam is an ensemble of historical instruments, including recorder, viol, cornetto, harp, sackbut, shawm, percussion, and voice.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2013-05-10 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "Free, but donations are accepted."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 8,
+            //                Name = "Da Capo: Lauda Musicam Celebrates Its Fifth Year.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, performs Medieval and Renaissance music on instruments appropriate for the time period.
+            //Lauda's yearlong observance of its fifth year begins with this concert of our greatest hits.
+            //This sampling of music from previous concerts reminds us of the wealth of compositions left by Renaissance-era composers.
+            //Lauda Musicam of Atlanta is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.
+            //Uncommon Practice, an a cappella vocal ensemble specializing in music before Bach's ""common practice"" period, will assist.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2013-11-15 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 9,
+            //                Name = "Bring on the Spring: A French & English Celebration of Springtime.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, performs Medieval and Renaissance music on instruments appropriate for the time period.
+            //After the dreary winter months, the coming of spring warrants a celebration.
+            //Lauda performs some of the music written for this joyous annual change in seasons.
+            //Lauda Musicam of Atlanta is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.
+            //Uncommon Practice, an a cappella vocal ensemble specializing in music before Bach's ""common practice"" period, will assist.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-02-23 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_ChurchOfTheNewCovenant,
+            //                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 10,
+            //                Name = "Instruments of the Renaissance: A Family & Children's Concert.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, will perform standard fare from the Medieval, Renaissance, and Baroque periods on instruments appropriate for the time period.
+            //The debut of a consort of handmade Boaz Berney Renaissance flutes will be the climax of our fifth season.
+            //Built into the performance will be demonstrations of the instruments and music forms for people less familiar with historical music.
+            //Members will lead a ""petting zoo"" after the concert for people to see and try instruments and to ask members questions.
+            //Lauda Musicam of Atlanta is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.
+            //Uncommon Practice, an a cappella vocal ensemble specializing in music before Bach's ""common practice"" period, will assist.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-05-04 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 11,
+            //                Name = "The Beauty of Brass: Italian Renaissance Music from Florence.",
+            //                Description = @"This performance will celebrate an exhibit of marble panels created by Italian sculptor Luca della Robbia for the Florence Cathedral’s Cantoria in the 1430s.
+            //Lauda Musicam’s brass quartet will perform Italian music that could have been heard in the cathedral for the two centuries following the installation of these panels.
+            //This quartet performs on sackbuts (Renaissance trombones), a tenor cornetto (a curved wooden instrument, with a trumpet-like mouthpiece, also known as a Lyzard), and a dulcian (a Renaissance bassoon).
+            //We hope that you will be able to join us for an evening of Italian Renaissance music.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-11-07 19:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_WoodruffArtsCenter
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 12,
+            //                Name = "Renaissance Music by The Carolyn Consort.",
+            //                Description = @"This performance will celebrate an exhibit of marble panels created by Italian sculptor Luca della Robbia for the Florence Cathedral’s Cantoria in the 1430s.
+            //The Carolyn consort is a quartet of musicians who perform Early Music of the Baroque, Renaissance and Medieval periods.
+            //The music is played on replicas of instruments that were in common use before 1750.
+            //The ensemble uses mostly recorders of all sizes, but may include capped reeds, percussion and other instruments of the period.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-11-08 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_WoodruffArtsCenter
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 13,
+            //                Name = "The Splendor of the Cathedral: Italian Renaissance Music from Florence.",
+            //                Description = @"Italian sculptor Luca della Robbia produced a set of marble panels for the Florence Cathedral’s cantoria in the 1430s.
+            //Lauda Musicam of Atlanta will perform Italian music that could have been heard in the cathedral for the two centuries following the installation of these panels.
+            //Recorders, viols, sackbuts, cornettos, flutes, shawms, and voices would have undoubtedly been used in these performances.
+            //Along with Uncommon Practice, an a cappella vocal ensemble, Lauda Musicam will recreate a musical performance to help Woodruff Arts Center celebrate the arrival of Robbia’s work.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-11-09 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_WoodruffArtsCenter,
+            //                Comment1 = "Full group perform at Woodruff Arts Center in atrium at 2 PM. Small groups perform in the gallery at 3 PM."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 14,
+            //                Name = "The Splendor of the Cathedral: Italian Renaissance Music from Florence.",
+            //                Description = @"Italian  sculptor Luca della Robbia produced a set of marble panels for the Florence Cathedral’s cantoria in the 1430s.
+            //Lauda Musicam of Atlanta will perform Italian music that could have been heard in the cathedral for the two centuries following the installation of these panels.
+            //Recorders, viols, sackbuts, cornettos, flutes, shawms, and voices would have undoubtedly been used in these performances.
+            //Along with Uncommon Practice, an a cappella vocal ensemble, Lauda Musicam will recreate a musical performance to help Woodruff Arts Center celebrate the arrival of Robbia’s work.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2014-11-14 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 15,
+            //                Name = "Celebrations: Early Music for Special Occasions.",
+            //                Description = @"Whether a birthday, a coronation, or a feast, music often played an important role in life’s celebrations.
+            //Lauda Musicam of Atlanta will perform renaissance and baroque intradas, fanfares, and other celebratory music as part of the Concert with a Cause concert series at the Church of the New Covenant.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2015-02-22 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_ChurchOfTheNewCovenant,
+            //                Comment1 = "Donations are accepted for a charity of the church’s choice."
+            //            });
+
+            //            events.Add(new EventModel()
+            //            {
+            //                Id = 16,
+            //                Name = "Instruments of the Renaissance: A Family and Children's Concert.",
+            //                Description = @"Lauda Musicam of Atlanta, conducted by Jody Miller, will perform repertoire from the Medieval, Renaissance, and Baroque periods
+            //on instruments appropriate for the time period.
+            //Built into the performance will be demonstrations of the instruments and music forms for people less familiar with historical music.
+            //Members will lead a ""petting zoo"" after the concert for people to see and try instruments and to ask questions.
+            //Lauda Musicam of Atlanta is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.
+            //Uncommon Practice, an a cappella vocal ensemble specializing in music before Bach's ""common practice"" period, will assist.",
+            //                TimeZoneId = "US Eastern Standard Time",
+            //                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2015-05-17 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //                Address = address_StBarts,
+            //                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //            });
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 17,
+            //    Name = "Fright Night: The Eerie Renaissance",
+            //    Description = @"Dark subjects have always held a place in music.  Lauda Musicam of Atlanta will provide a look at supernatural occurrences, death, and other morbid subjects using an array of historical instruments.  Uncommon Practice, an a cappella vocal ensemble specializing in music written outside Bach’s common practice period, will assist.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2015-11-13 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 18,
+            //    Name = "Where Did the Love Go? The Loveless Renaissance",
+            //    Description = @"Love and romance have provided fodder for composers throughout history.  The loss of love, though, makes for even more interesting stories through music.  Lauda Musicam of Atlanta will perform medieval, renaissance, and baroque music as part of the Concert with a Cause concert series at Church of the New Covenant.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-02-21 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_ChurchOfTheNewCovenant,
+            //    Comment1 = "The concert is free, but donations are accepted for a charity of the church's choice."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 19,
+            //    Name = "The Musical Tribute: A Family & Children's Concert",
+            //    Description = @"What better way to honor someone than to name a piece of music after them?  Lauda Musicam of Atlanta will perform works that bear the names of people, both unknown and famous.  Built into the performance will be demonstrations of the instruments and music forms for people less familiar with historical music. Members will lead a ""petting zoo"" after the concert for people to see and try instruments and to ask members questions. Lauda Musicam is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, and percussion.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-05-15 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //});
+
+            events.Add(new EventModel()
+            {
+                Id = 20,
+                Name = "Keyboards in Early Music",
+                Description = @"During the Renaissance and Baroque periods, the organ and the harpsichord were used in home music, chamber music, and church services.  Shannon Gallier, music director at St. Bartholomew’s Episcopal Church, and Paula Curl will perform with Lauda Musicam and our partner ensemble Uncommon Practice in this concert of music featuring keyboard instruments.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-11-11 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 21,
+                Name = "Off the Beaten Path",
+                Description = @"Lauda Musicam of Atlanta highlights the lesser-known composers of the Medieval and Renaissance periods.  The group will also perform some new music for old instruments, celebrating some of the repertoire that helped bring about the early music revival in the mid-20th century.  Lauda Musicam of Atlanta will perform as part of the Concert with a Cause concert series at Church of the New Covenant.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-02-26 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_ChurchOfTheNewCovenant,
+                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 22,
+                Name = "A Trip to Old Spain",
+                Description = @"Music from Spain has always had a special appeal. Interesting and asymmetrical rhythms have been incorporated in Spanish musical compositions for hundreds of years. In addition to a concert of both lively and lush Renaissance music, the members will lead a ""petting zoo"" after the concert. This will be the perfect stop after Mother’s Day brunch! Lauda Musicam is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, percussion, and other historical instruments.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-05-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The concert is free, but donations are accepted and appreciated."
+            });
+
+            var model = new HomePageModel()
+            {
+                Events = events
+            };
+
+            return View("HomeIndex", model);
+        }
+    }
+}

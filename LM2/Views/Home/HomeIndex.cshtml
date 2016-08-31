@@ -1,0 +1,25 @@
+﻿@model  LaudaMusicam.Models.HomePageModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div id="introBlock">
+    <h1>About Us</h1>
+    <div class="subContentBlock">
+        Lauda Musicam is a group of early music enthusiasts performing at church services and concerts at St. Bartholomew's Episcopal Church in Atlanta, Georgia.
+        &nbsp;&nbsp;<a href="@Url.Content("~/about")">More...</a>
+    </div>
+</div>
+<div class="eventsBlock">
+    <h1>Upcoming Concerts</h1>
+    <div class="subContentBlock">
+        @Html.Partial("_EventList1", Model.Events)
+    </div>
+</div>
+<div>
+    <h1>Donations</h1>
+    <div class="subContentBlock">
+        Visit <a href="https://www.yourcause.com/charities.aspx?CharityID=2192708" target="_blank">www.yourcause.com</a> to donate to Lauda Musicam of Atlanta. Make your contribution to us using your major credit card. Don't forget that donations are tax-deductible!
+    </div>
+</div>

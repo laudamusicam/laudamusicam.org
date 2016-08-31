@@ -1,0 +1,16 @@
+﻿@model IEnumerable<LaudaMusicam.Models.EventModel>
+
+@{
+    var i = 0;
+    foreach (var evt in Model)
+    {
+    <article>
+        <div class="eventName">@evt.Name</div>
+        <div class="eventDate">@evt.GetLocalTime().ToString("f")</div>
+        <div class="eventDesc">@evt.Description</div>
+        <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
+        <div class="eventComment1">@evt.Comment1</div>
+        @{i++;}
+    </article>
+    }
+}
