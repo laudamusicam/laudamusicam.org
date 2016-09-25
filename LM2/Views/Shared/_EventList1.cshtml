@@ -6,10 +6,20 @@
     {
     <article>
         <div class="eventName">@evt.Name</div>
-        <div class="eventDate">@evt.GetLocalTime().ToString("f")</div>
+        <div class="eventDate">@evt.GetLocalTime().ToString("D")<text> &nbsp;&nbsp; </text>@evt.GetLocalTime().ToString("t")</div>
         <div class="eventDesc">@evt.Description</div>
         <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
-        <div class="eventComment1">@evt.Comment1</div>
+        @{
+            if (evt.Comment1 != null)
+            {
+                <div class="eventComment1">@evt.Comment1</div>
+            }
+
+            if (evt.LinkText != null && evt.LinkHRef != null)
+            {
+                <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef)">@evt.LinkText</a></div>
+            }
+        }
         @{i++;}
     </article>
     }

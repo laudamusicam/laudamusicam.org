@@ -26,6 +26,9 @@ namespace LaudaMusicam.Models
 
         public virtual string Comment1 { get; set; }
 
+        public virtual string LinkText { get; set; }
+        public virtual string LinkHRef { get; set; }
+
         public DateTime GetLocalTime()
         {
             var tz = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneId);

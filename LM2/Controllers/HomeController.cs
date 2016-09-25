@@ -16,6 +16,7 @@ namespace LaudaMusicam.Controllers
             var address_EpiscopalChurchOfTheGoodShepherd = new Address { Name = "Episcopal Church of the Good Shepherd", StreetAddressLine1 = "4140 Clark Street SW", City = "Covington", StateProvince = "GA", ZipCode = "30014" };
             var address_ChurchOfTheNewCovenant = new Address { Name = "Church of the New Covenant", StreetAddressLine1 = "3330 Chestnut Drive", City = "Doraville", StateProvince = "GA", ZipCode = "30340" };
             var address_WoodruffArtsCenter = new Address { Name = "Woodruff Arts Center", StreetAddressLine1 = "1280 Peachtree Street NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30309" };
+            var address_KelischeksWorkshop = new Address { Name = "Kelischek Workshop for Historical Instruments", StreetAddressLine1 = "199 Waldroup Road", City = "Brasstown", StateProvince = "NC", ZipCode = "28902" };
 
             var events = new List<EventModel>();
 
@@ -334,6 +335,19 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 20,
+                Name = "2016 Lauda Play Date",
+                Description = @"Come join us for a day of music as we tour the workshop of George Kelischek in Brasstown, North Carolina.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-10-08 08:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_KelischeksWorkshop,
+                Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
+                LinkText = "Event Flyer",
+                LinkHRef = "Content/flyers/FlyerKelischek.pdf"
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 21,
                 Name = "Keyboards in Early Music",
                 Description = @"During the Renaissance and Baroque periods, the organ and the harpsichord were used in home music, chamber music, and church services.  Shannon Gallier, music director at St. Bartholomew’s Episcopal Church, and Paula Curl will perform with Lauda Musicam and our partner ensemble Uncommon Practice in this concert of music featuring keyboard instruments.",
                 TimeZoneId = "US Eastern Standard Time",
@@ -344,18 +358,18 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 21,
+                Id = 22,
                 Name = "Off the Beaten Path",
                 Description = @"Lauda Musicam of Atlanta highlights the lesser-known composers of the Medieval and Renaissance periods.  The group will also perform some new music for old instruments, celebrating some of the repertoire that helped bring about the early music revival in the mid-20th century.  Lauda Musicam of Atlanta will perform as part of the Concert with a Cause concert series at Church of the New Covenant.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-02-26 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_ChurchOfTheNewCovenant,
-                Comment1 = "The concert is free, but donations are accepted and appreciated."
+                Comment1 = "The concert is free, but donations are accepted for a charity of the church's choice."
             });
 
             events.Add(new EventModel()
             {
-                Id = 22,
+                Id = 23,
                 Name = "A Trip to Old Spain",
                 Description = @"Music from Spain has always had a special appeal. Interesting and asymmetrical rhythms have been incorporated in Spanish musical compositions for hundreds of years. In addition to a concert of both lively and lush Renaissance music, the members will lead a ""petting zoo"" after the concert. This will be the perfect stop after Mother’s Day brunch! Lauda Musicam is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, percussion, and other historical instruments.",
                 TimeZoneId = "US Eastern Standard Time",
