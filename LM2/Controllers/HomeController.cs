@@ -332,29 +332,29 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are accepted and appreciated."
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 20,
-                Name = "2016 Lauda Play Date",
-                Description = @"Come join us for a day of music as we tour the workshop of George Kelischek in Brasstown, North Carolina.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-10-08 08:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_KelischeksWorkshop,
-                Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
-                LinkText = "Event Flyer",
-                LinkHRef = "Content/flyers/FlyerKelischek.pdf"
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 20,
+            //    Name = "2016 Lauda Play Date",
+            //    Description = @"Come join us for a day of music as we tour the workshop of George Kelischek in Brasstown, North Carolina.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-10-08 08:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_KelischeksWorkshop,
+            //    Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
+            //    LinkText = "Event Flyer",
+            //    LinkHRef = "Content/flyers/FlyerKelischek.pdf"
+            //});
 
-            events.Add(new EventModel()
-            {
-                Id = 21,
-                Name = "Keyboards in Early Music",
-                Description = @"During the Renaissance and Baroque periods, the organ and the harpsichord were used in home music, chamber music, and church services.  Shannon Gallier, music director at St. Bartholomew’s Episcopal Church, and Paula Curl will perform with Lauda Musicam and our partner ensemble Uncommon Practice in this concert of music featuring keyboard instruments.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-11-11 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are accepted and appreciated."
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 21,
+            //    Name = "Keyboards in Early Music",
+            //    Description = @"During the Renaissance and Baroque periods, the organ and the harpsichord were used in home music, chamber music, and church services.  Shannon Gallier, music director at St. Bartholomew’s Episcopal Church, and Paula Curl will perform with Lauda Musicam and our partner ensemble Uncommon Practice in this concert of music featuring keyboard instruments.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2016-11-11 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //});
 
             events.Add(new EventModel()
             {
