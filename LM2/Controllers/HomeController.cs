@@ -356,26 +356,92 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are accepted and appreciated."
             //});
 
+            //events.Add(new EventModel()
+            //{
+            //    Id = 22,
+            //    Name = "Off the Beaten Path",
+            //    Description = @"Lauda Musicam of Atlanta highlights the lesser-known composers of the Medieval and Renaissance periods.  The group will also perform some new music for old instruments, celebrating some of the repertoire that helped bring about the early music revival in the mid-20th century.  Lauda Musicam of Atlanta will perform as part of the Concert with a Cause concert series at Church of the New Covenant.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-02-26 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_ChurchOfTheNewCovenant,
+            //    Comment1 = "The concert is free, but donations are accepted for a charity of the church's choice."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 23,
+            //    Name = "A Trip to Old Spain",
+            //    Description = @"Music from Spain has always had a special appeal. Interesting and asymmetrical rhythms have been incorporated in Spanish musical compositions for hundreds of years. In addition to a concert of both lively and lush Renaissance music, the members will lead a ""petting zoo"" after the concert. This will be the perfect stop after Mother’s Day brunch! Lauda Musicam is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, percussion, and other historical instruments.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-05-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are accepted and appreciated."
+            //});
+
             events.Add(new EventModel()
             {
-                Id = 22,
-                Name = "Off the Beaten Path",
-                Description = @"Lauda Musicam of Atlanta highlights the lesser-known composers of the Medieval and Renaissance periods.  The group will also perform some new music for old instruments, celebrating some of the repertoire that helped bring about the early music revival in the mid-20th century.  Lauda Musicam of Atlanta will perform as part of the Concert with a Cause concert series at Church of the New Covenant.",
+                Id = 24,
+                Name = "Lauda Musicam PlayDate at the Workshop of George Kelischek",
+                Description = "Lauda Musicam offers this “field trip” to scenic Brasstown, North Carolina, as we tour the workshop and spend the afternoon playing music on capped reeds, recorders, and other instruments. Bring a picnic or sack lunch for the grounds.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-02-26 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_ChurchOfTheNewCovenant,
-                Comment1 = "The concert is free, but donations are accepted for a charity of the church's choice."
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-10-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_KelischeksWorkshop,
+                Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
             });
 
             events.Add(new EventModel()
             {
-                Id = 23,
-                Name = "A Trip to Old Spain",
-                Description = @"Music from Spain has always had a special appeal. Interesting and asymmetrical rhythms have been incorporated in Spanish musical compositions for hundreds of years. In addition to a concert of both lively and lush Renaissance music, the members will lead a ""petting zoo"" after the concert. This will be the perfect stop after Mother’s Day brunch! Lauda Musicam is an instrumental ensemble of recorders, viols, flutes, harpsichord, sackbuts, shawms, harps, crumhorns, cornettos, percussion, and other historical instruments.",
+                Id = 25,
+                Name = "Brass in the Renaissance",
+                Description = "Brass instruments played a large role in church and court. The Lauda Musicam brass ensemble will be joined by guests including Doug Lindsey, cornetto soloist, in a performance of sacred and secular music that helped define the style of the period. In addition, recorders, viols, flutes, percussion, shawms, and capped reed instruments will bring together the type of diverse performance audiences have come to expect from this ensemble.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-05-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are accepted and appreciated."
+                Comment1 = "The concert is free, but donations are gratefully accepted."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 26,
+                Name = "Blushes and Giggles: An Afternoon of Bawdy Music",
+                Description = "Atlanta musician John Maschinot is featured on this concert of music that is neither prim nor proper. Bagpipes will set the tone for this raucous concert, but Lauda Musicam will join John as he sings and plays his way through some brow-raising tunes! A reception and instrument “petting zoo” follow the concert.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-02-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_ChurchOfTheNewCovenant,
+                Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 27,
+                Name = "Atlanta Recorder Society Consort Day",
+                Description = "A longtime tradition to celebrate both Early Music Month and National Play-the-Recorder Month, Consort Day gives local early musicians a chance to perform on a collage concert. Lauda Musicam and other area soloists and ensembles perform. A reception follows the concert.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-03-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_ChurchOfTheNewCovenant,
+                Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 28,
+                Name = "Lauda Musicam PlayDate—Early Masses",
+                Description = "Lisle Kulbach leads this reading session of early Renaissance masses for instrumentalists and singers.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-04-07 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 29,
+                Name = "Sephardic & Jewish Music",
+                Description = "Jewish composers contributed wonderful music to the early music repertoire, though we often overlook their contributions. Lauda Musicam will perform traditional Sephardic tunes as well as beautifully composed art music from the Baroque period and earlier on this Mother’s Day concert. A “petting zoo” follows the concert.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-05-13 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The concert is free, but donations are gratefully accepted."
             });
 
             var model = new HomePageModel()
