@@ -395,7 +395,7 @@ namespace LaudaMusicam.Controllers
                 Name = "Brass in the Renaissance",
                 Description = "Brass instruments played a large role in church and court. The Lauda Musicam brass ensemble will be joined by guests including Doug Lindsey, cornetto soloist, in a performance of sacred and secular music that helped define the style of the period. In addition, recorders, viols, flutes, percussion, shawms, and capped reed instruments will bring together the type of diverse performance audiences have come to expect from this ensemble.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-05-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-11-03 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
             });
