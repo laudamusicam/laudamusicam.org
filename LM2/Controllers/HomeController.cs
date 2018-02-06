@@ -378,33 +378,33 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are accepted and appreciated."
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 24,
-                Name = "Lauda Musicam PlayDate at the Workshop of George Kelischek",
-                Description = "Lauda Musicam offers this “field trip” to scenic Brasstown, North Carolina, as we tour the workshop and spend the afternoon playing music on capped reeds, recorders, and other instruments. Bring a picnic or sack lunch for the grounds.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-10-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_KelischeksWorkshop,
-                Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 24,
+            //    Name = "Lauda Musicam PlayDate at the Workshop of George Kelischek",
+            //    Description = "Lauda Musicam offers this “field trip” to scenic Brasstown, North Carolina, as we tour the workshop and spend the afternoon playing music on capped reeds, recorders, and other instruments. Bring a picnic or sack lunch for the grounds.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-10-14 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_KelischeksWorkshop,
+            //    Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
+            //});
 
-            events.Add(new EventModel()
-            {
-                Id = 25,
-                Name = "Brass in the Renaissance",
-                Description = "Brass instruments played a large role in church and court. The Lauda Musicam brass ensemble will be joined by guests including Doug Lindsey, cornetto soloist, in a performance of sacred and secular music that helped define the style of the period. In addition, recorders, viols, flutes, percussion, shawms, and capped reed instruments will bring together the type of diverse performance audiences have come to expect from this ensemble.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-11-03 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are gratefully accepted."
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 25,
+            //    Name = "Brass in the Renaissance",
+            //    Description = "Brass instruments played a large role in church and court. The Lauda Musicam brass ensemble will be joined by guests including Doug Lindsey, cornetto soloist, in a performance of sacred and secular music that helped define the style of the period. In addition, recorders, viols, flutes, percussion, shawms, and capped reed instruments will bring together the type of diverse performance audiences have come to expect from this ensemble.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2017-11-03 20:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are gratefully accepted."
+            //});
 
             events.Add(new EventModel()
             {
                 Id = 26,
                 Name = "Blushes and Giggles: An Afternoon of Bawdy Music",
-                Description = "Atlanta musician John Maschinot is featured on this concert of music that is neither prim nor proper. Bagpipes will set the tone for this raucous concert, but Lauda Musicam will join John as he sings and plays his way through some brow-raising tunes! A reception and instrument “petting zoo” follow the concert.",
+                Description = "Atlanta musicians John Maschinot and Linda Edwards are featured on this concert of music that is neither prim nor proper. Bagpipes will set the tone for this raucous concert, but Lauda Musicam will join John as he sings and plays his way through some brow-raising tunes! A reception and instrument “petting zoo” follow the concert.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-02-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_ChurchOfTheNewCovenant,
