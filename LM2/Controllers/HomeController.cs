@@ -400,42 +400,53 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are gratefully accepted."
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 26,
-                Name = "Blushes and Giggles: An Afternoon of Bawdy Music",
-                Description = "Atlanta musicians John Maschinot and Linda Edwards are featured on this concert of music that is neither prim nor proper. Bagpipes will set the tone for this raucous concert, but Lauda Musicam will join John as he sings and plays his way through some brow-raising tunes! A reception and instrument “petting zoo” follow the concert.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-02-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_ChurchOfTheNewCovenant,
-                Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 26,
+            //    Name = "Blushes and Giggles: An Afternoon of Bawdy Music",
+            //    Description = "Atlanta musicians John Maschinot and Linda Edwards are featured on this concert of music that is neither prim nor proper. Bagpipes will set the tone for this raucous concert, but Lauda Musicam will join John as he sings and plays his way through some brow-raising tunes! A reception and instrument “petting zoo” follow the concert.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-02-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_ChurchOfTheNewCovenant,
+            //    Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 27,
+            //    Name = "Atlanta Recorder Society Consort Day",
+            //    Description = "A longtime tradition to celebrate both Early Music Month and National Play-the-Recorder Month, Consort Day gives local early musicians a chance to perform on a collage concert. Lauda Musicam and other area soloists and ensembles perform. A reception follows the concert.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-03-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_ChurchOfTheNewCovenant,
+            //    Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 28,
+            //    Name = "Lauda Musicam PlayDate—Early Masses",
+            //    Description = "Lisle Kulbach leads this reading session of early Renaissance masses for instrumentalists and singers.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-04-07 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 29,
+            //    Name = "Sephardic & Jewish Music",
+            //    Description = "Jewish composers contributed wonderful music to the early music repertoire, though we often overlook their contributions. Lauda Musicam will perform traditional Sephardic tunes as well as beautifully composed art music from the Baroque period and earlier on this Mother’s Day concert. A “petting zoo” follows the concert.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-05-13 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are gratefully accepted."
+            //});
 
             events.Add(new EventModel()
             {
-                Id = 27,
-                Name = "Atlanta Recorder Society Consort Day",
-                Description = "A longtime tradition to celebrate both Early Music Month and National Play-the-Recorder Month, Consort Day gives local early musicians a chance to perform on a collage concert. Lauda Musicam and other area soloists and ensembles perform. A reception follows the concert.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-03-18 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_ChurchOfTheNewCovenant,
-                Comment1 = "The concert is free, but donations are accepted for a charity as part the “Concerts With a Cause” concert series."
-            });
-
-            events.Add(new EventModel()
-            {
-                Id = 28,
-                Name = "Lauda Musicam PlayDate—Early Masses",
-                Description = "Lisle Kulbach leads this reading session of early Renaissance masses for instrumentalists and singers.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-04-07 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_StBarts,
-                Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
-            });
-
-            events.Add(new EventModel()
-            {
-                Id = 29,
+                Id = 30,
                 Name = "Sephardic & Jewish Music",
                 Description = "Jewish composers contributed wonderful music to the early music repertoire, though we often overlook their contributions. Lauda Musicam will perform traditional Sephardic tunes as well as beautifully composed art music from the Baroque period and earlier on this Mother’s Day concert. A “petting zoo” follows the concert.",
                 TimeZoneId = "US Eastern Standard Time",
