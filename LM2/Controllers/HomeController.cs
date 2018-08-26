@@ -428,7 +428,7 @@ namespace LaudaMusicam.Controllers
                 Name = "Lauda Musicam PlayDate—Early Masses",
                 Description = "Lisle Kulbach leads this reading session of early Renaissance masses for instrumentalists and singers.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-04-07 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-04-07 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "Free to Lauda Musicam Members; $10 for non-members."
             });
