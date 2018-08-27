@@ -17,6 +17,7 @@ namespace LaudaMusicam.Controllers
             var address_ChurchOfTheNewCovenant = new Address { Name = "Church of the New Covenant", StreetAddressLine1 = "3330 Chestnut Drive", City = "Doraville", StateProvince = "GA", ZipCode = "30340" };
             var address_WoodruffArtsCenter = new Address { Name = "Woodruff Arts Center", StreetAddressLine1 = "1280 Peachtree Street NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30309" };
             var address_KelischeksWorkshop = new Address { Name = "Kelischek Workshop for Historical Instruments", StreetAddressLine1 = "199 Waldroup Road", City = "Brasstown", StateProvince = "NC", ZipCode = "28902" };
+            var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family,", StreetAddressLine1 = "202 Griffith Rd", City = "202 Griffith Rd", StateProvince = "GA", ZipCode = "30143" };
 
             var events = new List<EventModel>();
 
@@ -447,10 +448,59 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 30,
-                Name = "Sephardic & Jewish Music",
-                Description = "Jewish composers contributed wonderful music to the early music repertoire, though we often overlook their contributions. Lauda Musicam will perform traditional Sephardic tunes as well as beautifully composed art music from the Baroque period and earlier on this Mother’s Day concert. A “petting zoo” follows the concert.",
+                Name = "Lauda Musicam PlayDate at Kelischeks Workshop",
+                Description = "Includes a tour of the Kelischek Workshop, a playing session (capped reeds welcomed!), time for lunch on the grounds, and an opportunity to shop for music, instruments, and accessories.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-05-13 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 10:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_KelischeksWorkshop,
+                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 31,
+                Name = "Strings in the Renaissance",
+                Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The concert is free, but donations are gratefully accepted."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 32,
+                Name = "Strings in the Renaissance",
+                Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 16:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 17:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_JasperEpiscopalChurch,
+                Comment1 = "The concert is free, but donations are gratefully accepted."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 33,
+                Name = "Lauda Musicam PlayDate with Phil Hollar",
+                Description = "Phil Hollar conducts a playing session for early instruments.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 34,
+                Name = "Messe de Nostre Dame: Machaut's Medieval Masterpiece",
+                Description = "Lauda Musicam joins with the choir of St. Bartholomew's Episcopal Church in this performance of the earliest known complete setting of the Ordinary of the mass. Machaut's work from the mid-14th century advanced four-part polyphony and set the stage for many other composers to write complete masses.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
             });

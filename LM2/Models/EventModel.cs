@@ -16,6 +16,12 @@ namespace LaudaMusicam.Models
 
         public virtual DateTime Time { get; set; }
 
+        public virtual DateTime? EndTime { get; set; }
+
+        public virtual DateTime? Time2 { get; set; }
+
+        public virtual DateTime? EndTime2 { get; set; }
+
         public virtual string TimeZoneId { get; set; }
 
         public virtual string Name { get; set; }
@@ -29,14 +35,14 @@ namespace LaudaMusicam.Models
         public virtual string LinkText { get; set; }
         public virtual string LinkHRef { get; set; }
 
-        public DateTime GetLocalTime()
+        public DateTime GetLocalTime(DateTime t)
         {
             var tz = TimeZoneInfo.FindSystemTimeZoneById(TimeZoneId);
             if (tz == null)
             {
                 tz = TimeZoneInfo.FindSystemTimeZoneById("EST");
             }
-            return TimeZoneInfo.ConvertTimeFromUtc(Time, tz);
+            return TimeZoneInfo.ConvertTimeFromUtc(t, tz);
         }
     }
 }

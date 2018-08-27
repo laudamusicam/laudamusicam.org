@@ -6,7 +6,24 @@
     {
     <article>
         <div class="eventName">@evt.Name</div>
-        <div class="eventDate">@evt.GetLocalTime().ToString("D")<text> &nbsp;&nbsp; </text>@evt.GetLocalTime().ToString("t")</div>
+        <div class="eventDate">@evt.GetLocalTime(evt.Time).ToString("D")<text> &nbsp;&nbsp;</text>
+        @evt.GetLocalTime(evt.Time).ToString("t")
+            @if (evt.EndTime.HasValue)
+            {
+                <text> - @evt.GetLocalTime(evt.EndTime.Value).ToString("t")</text>
+            }
+        </div>
+        @if (evt.Time2.HasValue)
+        {
+            <div class="eventDate">
+                @evt.GetLocalTime(evt.Time2.Value).ToString("D")<text> &nbsp;&nbsp;</text>
+                @evt.GetLocalTime(evt.Time2.Value).ToString("t")
+                @if (evt.EndTime2.HasValue)
+                {
+                    <text> - @evt.GetLocalTime(evt.EndTime2.Value).ToString("t")</text>
+                }
+            </div>
+        }
         <div class="eventDesc">@evt.Description</div>
         <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
         @{
