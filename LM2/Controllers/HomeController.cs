@@ -17,7 +17,7 @@ namespace LaudaMusicam.Controllers
             var address_ChurchOfTheNewCovenant = new Address { Name = "Church of the New Covenant", StreetAddressLine1 = "3330 Chestnut Drive", City = "Doraville", StateProvince = "GA", ZipCode = "30340" };
             var address_WoodruffArtsCenter = new Address { Name = "Woodruff Arts Center", StreetAddressLine1 = "1280 Peachtree Street NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30309" };
             var address_KelischeksWorkshop = new Address { Name = "Kelischek Workshop for Historical Instruments", StreetAddressLine1 = "199 Waldroup Road", City = "Brasstown", StateProvince = "NC", ZipCode = "28902" };
-            var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family,", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
+            var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
 
             var events = new List<EventModel>();
 
@@ -475,8 +475,8 @@ namespace LaudaMusicam.Controllers
                 Name = "Strings in the Renaissance",
                 Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 16:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 17:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 15:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_JasperEpiscopalChurch,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
             });
