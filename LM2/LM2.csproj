@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -290,6 +291,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\LmTitle.psd" />
     <Content Include="Content\flyers\FlyerKelischek.pdf" />
+    <Content Include="Content\flyers\ConcertPosterFullNov2018HolyFamily.pdf" />
+    <Content Include="Content\flyers\ConcertPosterFullNov2018StBarts.pdf" />
     <None Include="Properties\PublishProfiles\Pub.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

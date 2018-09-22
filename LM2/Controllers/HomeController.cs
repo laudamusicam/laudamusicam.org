@@ -466,7 +466,9 @@ namespace LaudaMusicam.Controllers
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are gratefully accepted."
+                Comment1 = "The concert is free, but donations are gratefully accepted.",
+                LinkHRef = "/Content/flyers/ConcertPosterFullNov2018StBarts.pdf",
+                LinkText = "Concert Flyer"
             });
 
             events.Add(new EventModel()
@@ -478,7 +480,9 @@ namespace LaudaMusicam.Controllers
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 15:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_JasperEpiscopalChurch,
-                Comment1 = "The concert is free, but donations are gratefully accepted."
+                Comment1 = "The concert is free, but donations are gratefully accepted.",
+                LinkHRef = "/Content/flyers/ConcertPosterFullNov2018HolyFamily.pdf",
+                LinkText = "Concert Flyer"
             });
 
             events.Add(new EventModel()
