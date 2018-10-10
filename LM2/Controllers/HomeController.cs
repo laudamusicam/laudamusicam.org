@@ -18,6 +18,7 @@ namespace LaudaMusicam.Controllers
             var address_WoodruffArtsCenter = new Address { Name = "Woodruff Arts Center", StreetAddressLine1 = "1280 Peachtree Street NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30309" };
             var address_KelischeksWorkshop = new Address { Name = "Kelischek Workshop for Historical Instruments", StreetAddressLine1 = "199 Waldroup Road", City = "Brasstown", StateProvince = "NC", ZipCode = "28902" };
             var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
+            var address_StLukeLutheranChurch = new Address { Name = "St. Luke Lutheran Church", StreetAddressLine1 = "3264 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "30327" };
 
             var events = new List<EventModel>();
 
@@ -482,6 +483,19 @@ namespace LaudaMusicam.Controllers
                 Address = address_JasperEpiscopalChurch,
                 Comment1 = "The concert is free, but donations are gratefully accepted.",
                 LinkHRef = "/Content/flyers/ConcertPosterFullNov2018HolyFamily.pdf",
+                LinkText = "Concert Flyer"
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 33,
+                Name = "Chamber Music for Early Instruments",
+                Description = "Members of Lauda Musicam of Atlanta perform one-per-part music from the Medieval, Renaissance, and Baroque. The brass ensemble, the shawm ensemble, the flute ensemble, and others, perform some gems of the repertoire.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-02-17 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StLukeLutheranChurch,
+                Comment1 = "The concert is free, but donations are accepted.",
+                LinkHRef = "/Content/flyers/ConcertPosterFullFeb2019Chamber.pdf",
                 LinkText = "Concert Flyer"
             });
 
