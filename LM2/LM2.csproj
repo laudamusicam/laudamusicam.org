@@ -171,11 +171,13 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
+    <Compile Include="Controllers\DuesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageGalleryController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
+    <Compile Include="Controllers\PaymentSuccessController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -350,6 +352,8 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Home\HomeIndex.cshtml" />
     <Content Include="Views\Calendar\CalendarIndex.cshtml" />
+    <Content Include="Views\PaymentSuccess\PaymentSuccessIndex.cshtml" />
+    <Content Include="Views\Dues\DueIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
