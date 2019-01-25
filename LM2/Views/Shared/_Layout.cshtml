@@ -33,7 +33,6 @@
         </section>
         <footer>
             ©2012-2018 Lauda Musicam | <a href="mailto:lauda.musicam@gmail.com">Contact Us</a> | <a href="@Url.Content("~/calendar")">Lauda Event Calendar</a> | <a href="@Url.Content("~/dues")">Member Dues</a>
-            @{/*
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <table style="display: inline-block" border="0">
                 <tr>
@@ -43,25 +42,54 @@
                 </tr>
                 <tr>
                     <td>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="AGEGXC9B5HPVN">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <input type="hidden" name="hosted_button_id" value="DB6Z4B5HNT3LA">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Select the amount to donate:</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="Donate50">Donate $50.00 USD</option>
+                                            <option value="Donate100">Donate $100.00 USD</option>
+                                            <option value="Donate250">Donate $250.00 USD</option>
+                                            <option value="Donate500">Donate $500.00 USD</option>
+                                            <option value="Donate1000">Donate $1,000.00 USD</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                         </form>
                     </td>
                     <td></td>
                     <td>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="AGEGXC9B5HPVN">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <input type="hidden" name="hosted_button_id" value="Z78BQE4VMPG3N">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Select the amount to donate:">Select the amount to donate:</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="Donate50">Donate $50.00 USD</option>
+                                            <option value="Donate100">Donate $100.00 USD</option>
+                                            <option value="Donate250">Donate $250.00 USD</option>
+                                            <option value="Donate500">Donate $500.00 USD</option>
+                                            <option value="Donate1000">Donate $1,000.00 USD</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                         </form>
                     </td>
                 </tr>
             </table>
-            */}
         </footer>
     </div>
 </body>
