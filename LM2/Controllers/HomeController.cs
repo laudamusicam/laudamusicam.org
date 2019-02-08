@@ -446,45 +446,45 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are gratefully accepted."
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 30,
-                Name = "Lauda Musicam PlayDate at Kelischeks Workshop",
-                Description = "Includes a tour of the Kelischek Workshop, a playing session (capped reeds welcomed!), time for lunch on the grounds, and an opportunity to shop for music, instruments, and accessories.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 10:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_KelischeksWorkshop,
-                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 30,
+            //    Name = "Lauda Musicam PlayDate at Kelischeks Workshop",
+            //    Description = "Includes a tour of the Kelischek Workshop, a playing session (capped reeds welcomed!), time for lunch on the grounds, and an opportunity to shop for music, instruments, and accessories.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 10:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-10-20 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_KelischeksWorkshop,
+            //    Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
+            //});
 
-            events.Add(new EventModel()
-            {
-                Id = 31,
-                Name = "Strings in the Renaissance",
-                Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are gratefully accepted.",
-                LinkHRef = "/Content/flyers/ConcertPosterFullNov2018StBarts.pdf",
-                LinkText = "Concert Flyer"
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 31,
+            //    Name = "Strings in the Renaissance",
+            //    Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-11 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are gratefully accepted.",
+            //    LinkHRef = "/Content/flyers/ConcertPosterFullNov2018StBarts.pdf",
+            //    LinkText = "Concert Flyer"
+            //});
 
-            events.Add(new EventModel()
-            {
-                Id = 32,
-                Name = "Strings in the Renaissance",
-                Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 15:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_JasperEpiscopalChurch,
-                Comment1 = "The concert is free, but donations are gratefully accepted.",
-                LinkHRef = "/Content/flyers/ConcertPosterFullNov2018HolyFamily.pdf",
-                LinkText = "Concert Flyer"
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 32,
+            //    Name = "Strings in the Renaissance",
+            //    Description = "Viols, psalteries, harpsichords, and other instruments with strings have held a strong place in musical performances for centuries. Lauda Musicam of Atlanta’s full ensemble of winds and strings will join with musical guests in a concert featuring plucked and bowed strings.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 15:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2018-11-18 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_JasperEpiscopalChurch,
+            //    Comment1 = "The concert is free, but donations are gratefully accepted.",
+            //    LinkHRef = "/Content/flyers/ConcertPosterFullNov2018HolyFamily.pdf",
+            //    LinkText = "Concert Flyer"
+            //});
 
             events.Add(new EventModel()
             {
