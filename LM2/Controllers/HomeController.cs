@@ -505,7 +505,7 @@ namespace LaudaMusicam.Controllers
                 Name = "Lauda Musicam PlayDate with Phil Hollar",
                 Description = "Phil Hollar conducts a playing session for early instruments.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
