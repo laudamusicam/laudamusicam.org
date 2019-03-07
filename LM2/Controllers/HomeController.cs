@@ -486,18 +486,18 @@ namespace LaudaMusicam.Controllers
             //    LinkText = "Concert Flyer"
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 33,
-                Name = "Chamber Music for Early Instruments",
-                Description = "Members of Lauda Musicam of Atlanta perform one-per-part music from the Medieval, Renaissance, and Baroque. The brass ensemble, the shawm ensemble, the flute ensemble, and others, perform some gems of the repertoire.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-02-17 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_StLukeLutheranChurch,
-                Comment1 = "The concert is free, but donations are accepted.",
-                LinkHRef = "/Content/flyers/ConcertPosterFullFeb2019Chamber.pdf",
-                LinkText = "Concert Flyer"
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 33,
+            //    Name = "Chamber Music for Early Instruments",
+            //    Description = "Members of Lauda Musicam of Atlanta perform one-per-part music from the Medieval, Renaissance, and Baroque. The brass ensemble, the shawm ensemble, the flute ensemble, and others, perform some gems of the repertoire.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-02-17 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StLukeLutheranChurch,
+            //    Comment1 = "The concert is free, but donations are accepted.",
+            //    LinkHRef = "/Content/flyers/ConcertPosterFullFeb2019Chamber.pdf",
+            //    LinkText = "Concert Flyer"
+            //});
 
             events.Add(new EventModel()
             {
@@ -508,7 +508,9 @@ namespace LaudaMusicam.Controllers
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members."
+                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members.",
+                LinkText = "Sign up via Surey Monkey",
+                LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB"
             });
 
             events.Add(new EventModel()
