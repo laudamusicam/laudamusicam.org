@@ -502,8 +502,8 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 33,
-                Name = "Lauda Musicam PlayDate with Phil Hollar",
-                Description = "Phil Hollar conducts a playing session for early instruments.",
+                Name = "PlayDate with Phil Hollar",
+                Description = "Franco-Flamish Madrigalists: The music of Arcadelt, Verdelot, and de Rore, directed by Phil Hollar.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
