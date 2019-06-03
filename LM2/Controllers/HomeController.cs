@@ -499,30 +499,90 @@ namespace LaudaMusicam.Controllers
             //    LinkText = "Concert Flyer"
             //});
 
+            //events.Add(new EventModel()
+            //{
+            //    Id = 33,
+            //    Name = "PlayDate with Phil Hollar",
+            //    Description = "Franco-Flamish Madrigalists: The music of Arcadelt, Verdelot, and de Rore, directed by Phil Hollar.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members.",
+            //    LinkText = "Sign up via Surey Monkey",
+            //    LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB"
+            //});
+
+            //events.Add(new EventModel()
+            //{
+            //    Id = 34,
+            //    Name = "Messe de Nostre Dame: Machaut's Medieval Masterpiece",
+            //    Description = "Lauda Musicam joins with the choir of St. Bartholomew's Episcopal Church in this performance of the earliest known complete setting of the Ordinary of the mass. Machaut's work from the mid-14th century advanced four-part polyphony and set the stage for many other composers to write complete masses.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_StBarts,
+            //    Comment1 = "The concert is free, but donations are gratefully accepted."
+            //});
+
             events.Add(new EventModel()
             {
-                Id = 33,
-                Name = "PlayDate with Phil Hollar",
-                Description = "Franco-Flamish Madrigalists: The music of Arcadelt, Verdelot, and de Rore, directed by Phil Hollar.",
+                Id = 35,
+                Name = "Lauda Musicam Fall Concert",
+                Description = "Advent Christmas music.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-03-30 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "Lauda Musicam’s PlayDates are music reading sessions open to everyone. PlayDates are usually themed playing sessions directed by a guest. Bring instruments and a music stand. PlayDates are free to Lauda Musicam members and $10 for non-members.",
-                LinkText = "Sign up via Surey Monkey",
-                LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB"
+                Comment1 = "The concert is free, but donations are gratefully accepted."
             });
 
             events.Add(new EventModel()
             {
-                Id = 34,
-                Name = "Messe de Nostre Dame: Machaut's Medieval Masterpiece",
-                Description = "Lauda Musicam joins with the choir of St. Bartholomew's Episcopal Church in this performance of the earliest known complete setting of the Ordinary of the mass. Machaut's work from the mid-14th century advanced four-part polyphony and set the stage for many other composers to write complete masses.",
+                Id = 36,
+                Name = "Chamber Ensemble Concert",
+                Description = "",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-05-12 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 37,
+                Name = "Play Date",
+                Description = "",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The playdate is free for the Lauda Musicam members and $10 for non-members."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 38,
+                Name = "Lauda Musicam Spring Concert",
+                Description = "",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = "The concert is free, but donations are gratefully accepted."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 39,
+                Name = "Lauda Musicam Member Meeting and Playing Session",
+                Description = "",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 19:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 21:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = ""
             });
 
             var model = new HomePageModel()
