@@ -529,7 +529,7 @@ namespace LaudaMusicam.Controllers
             {
                 Id = 35,
                 Name = "Lauda Musicam Fall Concert",
-                Description = "Advent Christmas music.",
+                Description = "Advent and Christmas music.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -540,8 +540,19 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 36,
-                Name = "Chamber Ensemble Concert",
-                Description = "",
+                Name = "Prelude for the Children's Service",
+                Description = "A group of Lauda Musicam members periodally plays prelude music before the start of the service at St. Bartholomew's Episcopal Church. Usually, the prelude lasts for 15-20 minutes.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-12-24 10:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = ""
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 37,
+                Name = "Lauda Musicam Chamber Concert",
+                Description = "Chamber ensemble concert where small groups within Lauda Misucam get to perform the misual pieces of their choice.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -551,9 +562,9 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 37,
+                Id = 38,
                 Name = "Play Date",
-                Description = "",
+                Description = "Jennifer Streeter leads a playing session at St. Bartholomew's Episcopal Church.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -563,9 +574,9 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 38,
+                Id = 39,
                 Name = "Lauda Musicam Spring Concert",
-                Description = "",
+                Description = "We have not yet decided the theme for this concert. Please, check this page later for the updates.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -575,7 +586,7 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 39,
+                Id = 40,
                 Name = "Lauda Musicam Member Meeting and Playing Session",
                 Description = "",
                 TimeZoneId = "US Eastern Standard Time",
