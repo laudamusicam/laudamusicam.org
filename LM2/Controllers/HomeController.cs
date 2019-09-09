@@ -528,11 +528,11 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 35,
-                Name = "Lauda Musicam Fall Concert",
-                Description = "Advent and Christmas music.",
+                Name = "Music for Advent and Christmas",
+                Description = "Much of the music we all have come to associate with Advent and Christmas is from the Medieval, Renaissance, and Baroque periods, proving that good music will, indeed, stand the test of time. In anticipation of the season, Lauda Musicam celebrates with music and instruments used hundreds of years ago.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                //EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-11-24 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
             });
@@ -552,10 +552,10 @@ namespace LaudaMusicam.Controllers
             {
                 Id = 37,
                 Name = "Lauda Musicam Chamber Concert",
-                Description = "Chamber ensemble concert where small groups within Lauda Misucam get to perform the misual pieces of their choice.",
+                Description = "Lauda Musicam has a large collection of reproduction instruments and the group puts them to use in this varied concert of small ensembles.  Since instruments tended to play in like groups, music performances were intimate and music ensembles were small. Lauda members will play repertoire on appropriate instruments, giving a look (or a listen) into performances as they originally sounded.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                //EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-09 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "The concert is free, but donations are gratefully accepted."
             });
@@ -563,6 +563,15 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 38,
+                Name = "Performance as a Part of the Atlanta Recorder Society Consort Day.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-15 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Comment1 = ""
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 39,
                 Name = "Play Date",
                 Description = "Jennifer Streeter leads a playing session at St. Bartholomew's Episcopal Church.",
                 TimeZoneId = "US Eastern Standard Time",
@@ -574,7 +583,7 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 39,
+                Id = 40,
                 Name = "Lauda Musicam Spring Concert",
                 Description = "We have not yet decided the theme for this concert. Please, check this page later for the updates.",
                 TimeZoneId = "US Eastern Standard Time",
@@ -586,7 +595,7 @@ namespace LaudaMusicam.Controllers
 
             events.Add(new EventModel()
             {
-                Id = 40,
+                Id = 41,
                 Name = "Lauda Musicam Member Meeting and Playing Session",
                 Description = "",
                 TimeZoneId = "US Eastern Standard Time",

@@ -25,7 +25,14 @@
             </div>
         }
         <div class="eventDesc">@evt.Description</div>
-        <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
+        @if (evt.Address != null)
+        {
+            <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
+        }
+        else
+        {
+            <div class="eventAddress">Address is TBD</div>
+        }
         @{
             if (evt.Comment1 != null)
             {
