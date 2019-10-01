@@ -34,6 +34,8 @@ namespace LaudaMusicam.Models
 
         public virtual string LinkText { get; set; }
         public virtual string LinkHRef { get; set; }
+        public virtual string LinkText2 { get; set; }
+        public virtual string LinkHRef2 { get; set; }
 
         public DateTime GetLocalTime(DateTime t)
         {

@@ -535,7 +535,9 @@ namespace LaudaMusicam.Controllers
                 Address = address_KelischeksWorkshop,
                 Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
                 LinkText = "Event Flyer",
-                LinkHRef = "Content/flyers/FlyerKelischek.pdf"
+                LinkHRef = "Content/flyers/PlayDates20192020.pdf",
+                LinkText2 = "Signup Here",
+                LinkHRef2 = "https://www.surveymonkey.com/r/JKMZ6NB"
             });
 
             events.Add(new EventModel()

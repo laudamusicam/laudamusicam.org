@@ -201,6 +201,7 @@
     <Content Include="Content\3Recorders.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flyers\PhotoFBHollar.jpg" />
     <Content Include="Content\gallery\Christmas-Eve-2013-12-24\photo.jpg" />
     <Content Include="Content\gallery\LM-conecert-2015-02-22\lauda10_larger.jpg" />
     <Content Include="Content\gallery\LM-conecert-2015-02-22\lauda11_large.jpg" />
@@ -296,6 +297,7 @@
     <Content Include="Content\flyers\ConcertPosterFullNov2018HolyFamily.pdf" />
     <Content Include="Content\flyers\ConcertPosterFullNov2018StBarts.pdf" />
     <Content Include="Content\flyers\ConcertPosterFullFeb2019Chamber.pdf" />
+    <Content Include="Content\flyers\PlayDates20192020.pdf" />
     <None Include="Properties\PublishProfiles\Pub.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
