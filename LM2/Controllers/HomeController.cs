@@ -525,20 +525,20 @@ namespace LaudaMusicam.Controllers
             //    Comment1 = "The concert is free, but donations are gratefully accepted."
             //});
 
-            events.Add(new EventModel()
-            {
-                Id = 35,
-                Name = "Lauda Play Date",
-                Description = @"Come join us for a day of music as we tour the workshop of George Kelischek in Brasstown, North Carolina.",
-                TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-10-12 08:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                Address = address_KelischeksWorkshop,
-                Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
-                LinkText = "Event Flyer",
-                LinkHRef = "Content/flyers/PlayDates20192020.pdf",
-                LinkText2 = "Signup Here",
-                LinkHRef2 = "https://www.surveymonkey.com/r/JKMZ6NB"
-            });
+            //events.Add(new EventModel()
+            //{
+            //    Id = 35,
+            //    Name = "Lauda Play Date",
+            //    Description = @"Come join us for a day of music as we tour the workshop of George Kelischek in Brasstown, North Carolina.",
+            //    TimeZoneId = "US Eastern Standard Time",
+            //    Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-10-12 08:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+            //    Address = address_KelischeksWorkshop,
+            //    Comment1 = "Please, follow the event flyer link below for the instructions and schedule.",
+            //    LinkText = "Event Flyer",
+            //    LinkHRef = "Content/flyers/PlayDates20192020.pdf",
+            //    LinkText2 = "Signup Here",
+            //    LinkHRef2 = "https://www.surveymonkey.com/r/JKMZ6NB"
+            //});
 
             events.Add(new EventModel()
             {

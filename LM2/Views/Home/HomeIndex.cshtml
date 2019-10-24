@@ -13,6 +13,16 @@
 </div>
 <div class="eventsBlock">
     <h1>Upcoming Concerts</h1>
+    <h2 style="padding-left: 20px">Affiliated Group Concerts</h2>
+    <article class="subContentBlock">
+        <div style="padding-bottom: 4px">Amethyst Baroque Ensemble - <a href="https://www.amethystbaroque.com/">Baroque &amp; Beyond</a></div>
+        @{
+        var dt = DateTime.Parse("2019-11-16T15:00");
+        <div class="eventDate">@dt.ToString("D")<text>&nbsp;&nbsp;</text>@dt.ToString("t")</div>
+        }
+        <div class="eventAddress">Morningside Presbyterian Church, 1411 North Morningside Drive NE, Atlanta, Georgia 30606</div>
+    </article>
+    <h2 style="padding-left: 20px">Lauda Musicam Concerts</h2>
     <div class="subContentBlock">
         @Html.Partial("_EventList1", Model.Events)
     </div>
