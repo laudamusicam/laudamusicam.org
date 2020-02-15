@@ -19,6 +19,7 @@ namespace LaudaMusicam.Controllers
             var address_KelischeksWorkshop = new Address { Name = "Kelischek Workshop for Historical Instruments", StreetAddressLine1 = "199 Waldroup Road", City = "Brasstown", StateProvince = "NC", ZipCode = "28902" };
             var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
             var address_StLukeLutheranChurch = new Address { Name = "St. Luke Lutheran Church", StreetAddressLine1 = "3264 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "30327" };
+            var address_MorningsidePresbyterian = new Address { Name = "Morningside Presbyterian Church", StreetAddressLine1 = "1411 N Morningside Dr NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30306" };
 
             var events = new List<EventModel>();
 
@@ -592,7 +593,8 @@ namespace LaudaMusicam.Controllers
                 Id = 40,
                 Name = "Performance as a Part of the Atlanta Recorder Society Consort Day.",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-15 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-08 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_MorningsidePresbyterian,
                 Comment1 = ""
             });
 
@@ -611,8 +613,8 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 42,
-                Name = "Lauda Musicam Spring Concert",
-                Description = "We have not yet decided the theme for this concert. Please, check this page later for the updates.",
+                Name = "Music of Thrones",
+                Description = "The Soundtrack of the Renaissance Court. Before musicians had to work side jobs as retail clerks to make ends meet, there was a time when wealthy patrons helped provide the means by which artists could create and perform. Queen Elizabeth I, the namesake of the Elizabethan era, is a prime example of how music and other arts can thrive given support. We will explore music from this iconic period, as well as looking at other works associated with nobility.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -632,8 +634,24 @@ namespace LaudaMusicam.Controllers
                 Comment1 = ""
             });
 
-            var cutoffTime = DateTime.UtcNow.AddDays(1.0);
-            var events2 = events.Where(ev => ev.Time > cutoffTime).ToList();
+            events.Add(new EventModel()
+            {
+                Id = 44,
+                Name = "Sunday Service Prelude",
+                Description = "Periodically, some Lauda Musicam members play before the Sunday service at St. Bartholomew's Episcopal Church.",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-02-02 10:15"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2019-02-02 10:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts,
+                Comment1 = ""
+            });
+
+            var cutoffTime = DateTime.UtcNow.AddDays(-1.0);
+
+            var events2 = events
+                .Where(ev => ev.Time > cutoffTime)
+                .OrderBy(ev => ev.Time)
+                .ToList();
 
             var model = new HomePageModel()
             {
