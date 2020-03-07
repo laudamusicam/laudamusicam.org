@@ -30,22 +30,26 @@
     <h1>Upcoming Concerts</h1>
  
     @{        
-        if (utcNow > DateTime.Parse("2019-02-01") && utcNow < DateTime.Parse("2020-02-23"))
+        if (utcNow > DateTime.Parse("2019-02-01") && utcNow < DateTime.Parse("2020-03-02"))
         {
         <h2 style="padding-left: 20px">Affiliated Group Concerts</h2>
         <article class="subContentBlock">
             <div style="padding-bottom: 4px">Amethyst Baroque Ensemble - <a href="https://www.amethystbaroque.com/">Flye Care and Anguish</a></div>
             <div style="margin: 0 auto; padding-bottom: 4px">
-            <div style="font-size: smaller; margin-left: 20px">
-                The time of the English Restoration not only brought political changes and an expansion of trade, but also a surge in literary and artistic works.  While the German-born George Frideric Handel was one of the leading composers of the period, English composers such as Henry Purcell, John Blow, and Thomas Arne were creating iconic English works for ballad operas and the theater, solidifying England’s role in entertaining the masses who hungered to be both listeners and performers.  From the lute songs of Thomas Campion to Arne’s “Rule Britannia,” the English helped popularize music through the formation of choral societies, private in-home performances, and music festivals.
-            </div>
+                <div style="font-size: smaller; margin-left: 20px">
+                    The time of the English Restoration not only brought political changes and an expansion of trade, but also a surge in literary and artistic works.  While the German-born George Frideric Handel was one of the leading composers of the period, English composers such as Henry Purcell, John Blow, and Thomas Arne were creating iconic English works for ballad operas and the theater, solidifying England’s role in entertaining the masses who hungered to be both listeners and performers.  From the lute songs of Thomas Campion to Arne’s “Rule Britannia,” the English helped popularize music through the formation of choral societies, private in-home performances, and music festivals.
+                </div>
             </div>
             @{
-            var dt2 = DateTime.Parse("2020-02-22T19:30");
-            <div class="eventDate">@dt2.ToString("D")<text>&nbsp;&nbsp;</text>@dt2.ToString("t")</div>
+                var dt2 = DateTime.Parse("2020-02-29T19:30");
+                <div class="eventDate" style="margin-top: 10px">@dt2.ToString("D")<text>&nbsp;&nbsp;</text>@dt2.ToString("t")</div>
             }
-        <div class="eventAddress">Piedmont College Conservatory of Music, 1029 Central Avenue, Demorest, Georgia 30535
-        </div>
+            <div class="eventAddress">University of North Georgia, Shott Hall, Nix Fine Arts Center. 238 Georgia Circle, Dahlonega, Georgia 30597</div>
+            @{
+                var dt3 = DateTime.Parse("2020-03-01T15:00");
+                <div class="eventDate" style="margin-top: 10px">@dt3.ToString("D")<text>&nbsp;&nbsp;</text>@dt3.ToString("t")</div>
+            }
+        <div class="eventAddress">Morningside Presbyterian Church. 1411 N Morningside Dr NE, Atlanta, Georgia, 30306</div>
         </article>
         <h2 style="padding-left: 20px">Lauda Musicam Concerts</h2>
         }
