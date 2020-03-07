@@ -607,7 +607,11 @@ namespace LaudaMusicam.Controllers
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "The playdate is free for the Lauda Musicam members and $10 for non-members."
+                Comment1 = "The playdate is free for the Lauda Musicam members and $10 for non-members.",
+                LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB",
+                LinkText = "Sign up via Survey Monkey",
+                LinkHRef2 = "Content/flyers/Lauda2019-20playdateFlier.jpg",
+                LinkText2 = "Printable Play Date flyer"
             });
 
             events.Add(new EventModel()
