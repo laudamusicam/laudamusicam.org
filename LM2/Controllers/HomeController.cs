@@ -601,15 +601,16 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 41,
-                Name = "Play Date",
-                Description = "Jennifer Streeter leads a playing session at St. Bartholomew's Episcopal Church.",
+                Name = "CANCELED - Play Date",
+                //Description = "Jennifer Streeter leads a playing session at St. Bartholomew's Episcopal Church.",
+                Description = "Due to the recent COVID-19 spread in Georgia, we have decided to postpone the Play Date",
                 TimeZoneId = "US Eastern Standard Time",
-                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
-                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                //Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 14:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                //EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-03-28 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "The playdate is free for the Lauda Musicam members and $10 for non-members.",
-                LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB",
-                LinkText = "Sign up via Survey Monkey",
+                //Comment1 = "The playdate is free for the Lauda Musicam members and $10 for non-members.",
+                //LinkHRef = "https://www.surveymonkey.com/r/JKMZ6NB",
+                //LinkText = "Sign up via Survey Monkey",
                 LinkHRef2 = "Content/flyers/Lauda2019-20playdateFlier.jpg",
                 LinkText2 = "Printable Play Date flyer"
             });
@@ -617,20 +618,20 @@ namespace LaudaMusicam.Controllers
             events.Add(new EventModel()
             {
                 Id = 42,
-                Name = "Music of Thrones",
+                Name = "CANCELED - Music of Thrones",
                 Description = "The Soundtrack of the Renaissance Court. Before musicians had to work side jobs as retail clerks to make ends meet, there was a time when wealthy patrons helped provide the means by which artists could create and perform. Queen Elizabeth I, the namesake of the Elizabethan era, is a prime example of how music and other arts can thrive given support. We will explore music from this iconic period, as well as looking at other works associated with nobility.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
-                Comment1 = "The concert is free, but donations are gratefully accepted."
+                Comment1 = "We have moved this concert to the next season due to COVID-19 pandemic."
             });
 
             events.Add(new EventModel()
             {
                 Id = 43,
                 Name = "Lauda Musicam Member Meeting and Playing Session",
-                Description = "",
+                Description = "This year, member meeting will not be held in person. We are moving it online and will provide the details later.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 19:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 21:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
@@ -653,8 +654,8 @@ namespace LaudaMusicam.Controllers
             var cutoffTime = DateTime.UtcNow.AddDays(-1.0);
 
             var events2 = events
-                .Where(ev => ev.Time > cutoffTime)
-                .OrderBy(ev => ev.Time)
+                .Where(ev => !ev.Time.HasValue || ev.Time.Value > cutoffTime)
+                .OrderBy(ev => ev.Time ?? DateTime.MinValue)
                 .ToList();
 
             var model = new HomePageModel()

@@ -6,51 +6,54 @@
     {
     <article>
         <div class="eventName">@evt.Name</div>
-        <div class="eventDate">
-            @evt.GetLocalTime(evt.Time).ToString("D")<text> &nbsp;&nbsp;</text>
-        @evt.GetLocalTime(evt.Time).ToString("t")
-        @if (evt.EndTime.HasValue)
+        @if (evt.Time.HasValue)
         {
-            <text> - @evt.GetLocalTime(evt.EndTime.Value).ToString("t")</text>
+            <div class="eventDate">
+                @evt.GetLocalTime(evt.Time.Value).ToString("D")<text> &nbsp;&nbsp;</text>
+                @evt.GetLocalTime(evt.Time.Value).ToString("t")
+                @if (evt.EndTime.HasValue)
+                {
+                    <text> - @evt.GetLocalTime(evt.EndTime.Value).ToString("t")</text>
+                }
+            </div>
         }
-    </div>
-    @if (evt.Time2.HasValue)
-    {
-        <div class="eventDate">
-            @evt.GetLocalTime(evt.Time2.Value).ToString("D")<text> &nbsp;&nbsp;</text>
-            @evt.GetLocalTime(evt.Time2.Value).ToString("t")
-            @if (evt.EndTime2.HasValue)
+        @if (evt.Time2.HasValue)
+        {
+            <div class="eventDate">
+                @evt.GetLocalTime(evt.Time2.Value).ToString("D")<text> &nbsp;&nbsp;</text>
+                @evt.GetLocalTime(evt.Time2.Value).ToString("t")
+                @if (evt.EndTime2.HasValue)
+                {
+                    <text> - @evt.GetLocalTime(evt.EndTime2.Value).ToString("t")</text>
+                }
+            </div>
+        }
+        <div class="eventDesc">@evt.Description</div>
+        @if (evt.Address != null)
+        {
+            <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
+        }
+        else
+        {
+            <div class="eventAddress">Address is TBD</div>
+        }
+        @{
+            if (evt.Comment1 != null)
             {
-                <text> - @evt.GetLocalTime(evt.EndTime2.Value).ToString("t")</text>
+                <div class="eventComment1">@evt.Comment1</div>
             }
-        </div>
-    }
-    <div class="eventDesc">@evt.Description</div>
-    @if (evt.Address != null)
-    {
-        <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
-    }
-    else
-    {
-        <div class="eventAddress">Address is TBD</div>
-    }
-    @{
-        if (evt.Comment1 != null)
-        {
-            <div class="eventComment1">@evt.Comment1</div>
-        }
 
-        if (evt.LinkText != null && evt.LinkHRef != null)
-        {
-            <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef)">@evt.LinkText</a></div>
-        }
+            if (evt.LinkText != null && evt.LinkHRef != null)
+            {
+                <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef)">@evt.LinkText</a></div>
+            }
 
-        if (evt.LinkText2 != null && evt.LinkHRef2 != null)
-        {
-            <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef2)">@evt.LinkText2</a></div>
+            if (evt.LinkText2 != null && evt.LinkHRef2 != null)
+            {
+                <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef2)">@evt.LinkText2</a></div>
+            }
         }
-    }
-    @{i++;}
+        @{i++;}
     </article>
     }
 }

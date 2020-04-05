@@ -14,7 +14,7 @@ namespace LaudaMusicam.Models
         [Required]
         public virtual int Id { get; set; }
 
-        public virtual DateTime Time { get; set; }
+        public virtual DateTime? Time { get; set; }
 
         public virtual DateTime? EndTime { get; set; }
 
