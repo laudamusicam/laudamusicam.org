@@ -631,7 +631,7 @@ namespace LaudaMusicam.Controllers
             {
                 Id = 43,
                 Name = "Lauda Musicam Member Meeting and Playing Session",
-                Description = "This year, member meeting will not be held in person. We are moving it online and will provide the details later.",
+                Description = "This year, member meeting will not be held in person. We are moving it online: please contact lauda.musicam@gmail.com for information.",
                 TimeZoneId = "US Eastern Standard Time",
                 Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 19:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-06-08 21:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
