@@ -1,0 +1,11 @@
+.vs/**
+pub/**
+prod_backups/**
+packages/**
+*.csproj.user
+LM2/obj/**
+LM2/bin/**
+Thumbs.db
+.DS_Store
+LM2/Properties/**
+LM2/vendor/**
