@@ -2,16 +2,23 @@
 
 @{
     ViewBag.Title = "Home";
-    var utcNow = DateTime.UtcNow ;
+    var utcNow = DateTime.UtcNow;
 }
 
-<div id="introBlock">
-    <h1>About Us</h1>
-    <div class="subContentBlock">
-        Lauda Musicam is a group of early music enthusiasts performing at church services and concerts at St. Bartholomew's Episcopal Church in Atlanta, Georgia.
-        &nbsp;&nbsp;<a href="@Url.Content("~/about")">More...</a>
+    <div id="introBlock">
+        <h1>About Us</h1>
+        <div class="subContentBlock">
+            Lauda Musicam is a group of early music enthusiasts performing at church services and concerts at St. Bartholomew's Episcopal Church in Atlanta, Georgia.
+            &nbsp;&nbsp;<a href="@Url.Content("~/about")">More...</a>
+        </div>
+
+        <article class="subContentBlock" style="margin-top: 20px">
+            Lauda Musicam will be continuing to rehearse through the fall. Our focus will be on standard Renaissance consort repertoire and we will be breaking down all the parts carefully.  Members will be able to make multi-track recordings of the consort music as we learn it.
+            Click <a href="@Url.Content("~/Content/flyers/LaudaFallSchedule2020.pdf")">HERE</a> to read more details about this fall's sessions.
+            We invite our Altanta-area friends and our friends from further locations to join us as we learn music virtually.  We do not have a strict audition requirement at this time, as no performance is scheduled for the fall.
+            To join at our reduced cost of $20, please click <a href="@Url.Content("~/dues")">HERE</a> to pay.  If you are new to Lauda, please also send an introductory email to music director Jody Miller at recorder96@gmail.com.
+        </article>
     </div>
-</div>
 <div class="eventsBlock">
     @if (utcNow < DateTime.Parse("2020-01-27"))
     {
@@ -26,8 +33,10 @@
         
         <div class="eventAddress">McCleskey Middle School, 4080 Maybreeze Road, Marietta, GA 30066</div>
     </article>
-    }
+            }
+    @*
     <h1>Upcoming Concerts</h1>
+    *@
  
     @{        
         if (utcNow > DateTime.Parse("2019-02-01") && utcNow < DateTime.Parse("2020-03-02"))
