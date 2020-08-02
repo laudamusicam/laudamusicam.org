@@ -299,6 +299,7 @@
     <Content Include="Content\flyers\ConcertPosterFullNov2018StBarts.pdf" />
     <Content Include="Content\flyers\ConcertPosterFullFeb2019Chamber.pdf" />
     <Content Include="Content\flyers\PlayDates20192020.pdf" />
+    <Content Include="Content\flyers\LaudaFallSchedule2020.pdf" />
     <None Include="Properties\PublishProfiles\Pub.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
