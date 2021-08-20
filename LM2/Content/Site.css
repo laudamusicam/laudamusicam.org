@@ -68,3 +68,10 @@ footer, #footer { font-size: 8pt; color: Gray; margin: 0px 40px 10px 40px; paddi
 .blockLink:active { color: #590a0c; }
 
 .linksArticle { padding: 10px 0 10px 0 }
+
+.joinNowJumbotron .joinNowLink {
+    font-size: 24pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9A171D
+}
