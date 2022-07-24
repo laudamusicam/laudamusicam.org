@@ -1,0 +1,92 @@
+﻿@model  LaudaMusicam.Models.ImageGallery
+
+@{
+    ViewBag.Title = "Gallery - " + Model.Title;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div style="margin-top:20px">
+@Model.Description
+</div>
+
+<div style="margin-top:50px">
+    @*
+        !!!! Replace with the images from the model.
+        In 2 - colum view the image must be approx 400px wide.
+    *@
+    <table style="text-align:center; vertical-align:middle; width:100%">
+        @if (Model.Name == "medieval-day-2012")
+        {
+        <tr>
+            <td><img width="390" height="260" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7084.JPG")" alt="Gallery Image" /></td>
+            <td><img width="390" height="260" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7085.JPG")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7086.JPG")" alt="Gallery Image" /></td>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7087.JPG")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img width="390" height="260" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7088.JPG")" alt="Gallery Image" /></td>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7089.JPG")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7091.JPG")" alt="Gallery Image" /></td>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7092.JPG")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img width="260" height="390" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7094.JPG")" alt="Gallery Image" /></td>
+            <td><img width="390" height="260" src="@Url.Content("~/gallery/medieval-day-2012/IMG_7095.JPG")" alt="Gallery Image" /></td>
+        </tr>
+        }
+        else if (Model.Name == "LM-conecert-2015-02-22")
+        {
+        <tr>
+            <td><img  style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda12_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda1_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda2_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda3_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda4_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda5_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda6_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda7_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda9_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda10_larger.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        <tr>
+            <td><img style="max-width: 800px; max-height: 800px;" src="@Url.Content("~/gallery/LM-conecert-2015-02-22/lauda11_large.jpg")" alt="Gallery Image" /></td>
+        </tr>
+        }
+        else if (Model.Name == "Picketts-Mill-Elementary-School-Chorus-2012-02")
+        {
+        <tr>
+            <td><a href="@Url.Content("~/gallery/Picketts-Mill-Elementary-School-Chorus-2012-02/IMG_0022.JPG")"><img border="0" width="320" height="240" src="@Url.Content("~/gallery/Picketts-Mill-Elementary-School-Chorus-2012-02/IMG_0022_small.JPG")" alt="Gallery Image" /></a></td>
+            <td><a href="@Url.Content("~/gallery/Picketts-Mill-Elementary-School-Chorus-2012-02/IMG_0024.JPG")"><img border="0" width="320" height="240" src="@Url.Content("~/gallery/Picketts-Mill-Elementary-School-Chorus-2012-02/IMG_0024_small.JPG")" alt="Gallery Image" /></a></td>
+        </tr>
+        }
+        else if (Model.Name == "Christmas-Eve-2013-12-24")
+        {
+        <tr>
+            <td><a href="@Url.Content("~/gallery/Christmas-Eve-2013-12-24/photo.jpg")"><img border="0" width="640" height="480" src="@Url.Content("~/gallery/Christmas-Eve-2013-12-24/photo.jpg")" alt="Gallery Image" /></a></td>
+         </tr>
+         }
+    </table>
+</div>

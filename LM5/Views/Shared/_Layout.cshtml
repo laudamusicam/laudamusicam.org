@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@("Lauda Musicam - " + ViewBag.Title)</title>
+    <link href='https://fonts.googleapis.com/css?family=Diplomata|Chivo:900|Coda:800|Amarante|Alegreya:700italic|Source+Sans+Pro:900italic' rel='stylesheet' type='text/css'>
+    <link href="@Url.Content("~/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="title" class="left">
+                <a href="@Url.Action("Index", "Home")"><img alt="Lauda Musicam of Atlanta" src="@Url.Content("~/LmTitle.png")" width="600px" /></a>
+            </div>
+            <nav class="right">
+                <ul>
+                    <li style="display:none"><a href="@Url.Content("~/calendar")">Lauda Calendar</a></li>
+                    <li><a href="@Url.Content("~/media")">Recordings and Photos</a></li>
+                    <li><a href="@Url.Content("~/about")">About Us</a></li>
+                    <li><a href="@Url.Content("~/links")">Links</a></li>
+                </ul>
+            </nav>
+            <div id="photoStripContainer" class="left">
+                <img id="photoStrip" alt="Photo Strip" src="@Url.Content("~/PhotoStrip3.png")" />
+            </div>
+        </header>
+        <section id="main" class="clear">
+            @RenderBody()
+        </section>
+        <footer>
+            ©2012-2022 Lauda Musicam | <a href="mailto:lauda.musicam@gmail.com">Contact Us</a> | <a href="@Url.Content("~/calendar")">Lauda Event Calendar</a> | <a href="@Url.Content("~/dues")">Member Dues &amp; Join as a New Member</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <table style="display: inline-block; margin: 30px auto auto 30px" border="0">
+                <tr>
+                    <td style="text-align: center">General Fund:</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td style="text-align: center">Intrument Fund:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="DB6Z4B5HNT3LA">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Select the amount to donate:</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="Donate50">Donate $50.00 USD</option>
+                                            <option value="Donate100">Donate $100.00 USD</option>
+                                            <option value="Donate250">Donate $250.00 USD</option>
+                                            <option value="Donate500">Donate $500.00 USD</option>
+                                            <option value="Donate1000">Donate $1,000.00 USD</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </td>
+                    <td></td>
+                    <td>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="Z78BQE4VMPG3N">
+                            <table>
+                                <tr><td><input type="hidden" name="on0" value="Select the amount to donate:">Select the amount to donate:</td></tr>
+                                <tr>
+                                    <td>
+                                        <select name="os0">
+                                            <option value="Donate50">Donate $50.00 USD</option>
+                                            <option value="Donate100">Donate $100.00 USD</option>
+                                            <option value="Donate250">Donate $250.00 USD</option>
+                                            <option value="Donate500">Donate $500.00 USD</option>
+                                            <option value="Donate1000">Donate $1,000.00 USD</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</body>
+</html>
