@@ -28,7 +28,7 @@
                 }
             </div>
         }
-        <div class="eventDesc">@evt.Description</div>
+        <div class="eventDesc">@Html.Raw(evt.Description)</div>
         @if (evt.Address != null)
         {
             <div class="eventAddress">@evt.Address.GetOneLineUsaAddressString()</div>
@@ -40,12 +40,12 @@
         @{
             if (evt.Comment1 != null)
             {
-                <div class="eventComment1">@evt.Comment1</div>
+                <div class="eventComment1">@Html.Raw(evt.Comment1)</div>
             }
 
             if (evt.LinkText != null && evt.LinkHRef != null)
             {
-                <div class="eventComment1"><a href="@Url.Content(evt.LinkHRef)">@evt.LinkText</a></div>
+                <div class="eventComment1 large"><a href="@Url.Content(evt.LinkHRef)">@evt.LinkText</a></div>
             }
 
             if (evt.LinkText2 != null && evt.LinkHRef2 != null)

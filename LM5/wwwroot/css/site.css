@@ -150,11 +150,11 @@ footer, #footer {
     font-size: 10pt;
     font-family: 'Chivo';
     font-weight: 900;
-    margin-bottom: 4px
+    margin: 10px 0 4px 0;
 }
 
 .eventDesc {
-    margin: 0 0 4pt 0
+    margin: 12px 0 8pt 0
 }
 
 .eventAddress {
@@ -165,11 +165,15 @@ footer, #footer {
 
 .eventComment1 {
     color: #003162;
-    margin: 0 0 10px 0;
+    margin: 12px 0 10px 0;
     font-family: 'Alegreya', serif;
     font-weight: 700;
     font-style: italic;
     font-size: 10pt
+}
+
+.eventComment1.large {
+    font-size: 14pt
 }
 
 .blockLink {

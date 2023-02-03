@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\PlayDateSpring2023\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\PlayDateSpring2023\" />
+  </ItemGroup>
 </Project>

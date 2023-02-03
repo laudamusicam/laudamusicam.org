@@ -20,6 +20,7 @@ namespace LaudaMusicam.Controllers
             var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
             var address_StLukeLutheranChurch = new Address { Name = "St. Luke Lutheran Church", StreetAddressLine1 = "3264 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "30327" };
             var address_MorningsidePresbyterian = new Address { Name = "Morningside Presbyterian Church", StreetAddressLine1 = "1411 N Morningside Dr NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30306" };
+            var address_AtlantaSpeechSchool = new Address { Name = "Atlanta Speech School", StreetAddressLine1 = "3160 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "20237" };
 
             var events = new List<EventModel>();
 
@@ -661,6 +662,26 @@ namespace LaudaMusicam.Controllers
                 EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2020-05-03 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
                 Address = address_StBarts,
                 Comment1 = "We have moved this concert to the next season due to COVID-19 pandemic."
+            });
+
+            events.Add(new EventModel()
+            {
+                Id = 46,
+                Name = "Lauda Musicam PlayDate",
+                Description = @"
+                    Presented by Daphna Mor, Sarah Mead, and Jody Miller. <br>
+                    Lauda Musicam of Atlanta offers two PlayDates each year for our members and our friends to play music together and to dig deeper into historical music.
+                ",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2023-03-25 09:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2023-03-25 16:30"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_AtlantaSpeechSchool,
+                Comment1 = @"
+                    Registration is $50 for members of Lauda Musicam of Atlanta and $100 for non-members. <br>
+                    Non-members may join Lauda Musicam at the time of registration and then join at the $50 discount
+                ",
+                LinkHRef = "/PlayDateSpring2023",
+                LinkText = "Addition information and registration",
             });
 
             var cutoffTime = DateTime.UtcNow.AddDays(-1.0);
