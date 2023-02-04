@@ -20,7 +20,7 @@ namespace LaudaMusicam.Controllers
             var address_JasperEpiscopalChurch = new Address { Name = "Episcopal Church - Holy Family", StreetAddressLine1 = "202 Griffith Rd", City = "Jasper", StateProvince = "GA", ZipCode = "30143" };
             var address_StLukeLutheranChurch = new Address { Name = "St. Luke Lutheran Church", StreetAddressLine1 = "3264 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "30327" };
             var address_MorningsidePresbyterian = new Address { Name = "Morningside Presbyterian Church", StreetAddressLine1 = "1411 N Morningside Dr NE", City = "Atlanta", StateProvince = "GA", ZipCode = "30306" };
-            var address_AtlantaSpeechSchool = new Address { Name = "Atlanta Speech School", StreetAddressLine1 = "3160 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "20237" };
+            var address_AtlantaSpeechSchool = new Address { Name = "Atlanta Speech School", StreetAddressLine1 = "3160 Northside Parkway NW", City = "Atlanta", StateProvince = "GA", ZipCode = "30327" };
 
             var events = new List<EventModel>();
 
