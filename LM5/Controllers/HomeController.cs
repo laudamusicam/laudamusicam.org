@@ -684,6 +684,25 @@ namespace LaudaMusicam.Controllers
                 LinkText = "Addition information and registration",
             });
 
+            events.Add(new EventModel()
+            {
+                Id = 47,
+                Name = "Dance Party",
+                Description = @"
+                    Lauda Musicam collaborates with Atlanta Historic Dance in this concert of early dance music.
+                    Dancing was an important part of society in the Renaissance and Baroque, creating a symbiotic relationship between dancers and musicians.
+                    Dance treatises left information about choreography and musical accompaniment styles, both brought to life through this collaborative performance.
+                    A short audience dancing lesson will follow the concert.
+                ",
+                Comment1 = "The concert is free, but donations are gratefully accepted.",
+                LinkHRef = "https://www.facebook.com/atlantahistoricdance",
+                LinkText = "Atlanta Historic Dance",
+                TimeZoneId = "US Eastern Standard Time",
+                Time = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2023-05-07 15:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                EndTime = TimeZoneInfo.ConvertTimeToUtc(DateTime.Parse("2023-05-07 17:00"), TimeZoneInfo.FindSystemTimeZoneById("US Eastern Standard Time")),
+                Address = address_StBarts
+            });
+
             var cutoffTime = DateTime.UtcNow.AddDays(-1.0);
 
             var events2 = events
